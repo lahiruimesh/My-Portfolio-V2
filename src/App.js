@@ -12,8 +12,9 @@ import GalaxyBackground from "./Components/GalaxyBackground";
 function App() {
   return (
     <div>
-      <GalaxyBackground />
+      
       <Navbar />
+      <GalaxyBackground />
       <Hero />
       <About />
       <Projects />
