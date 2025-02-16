@@ -3,6 +3,7 @@ import React from "react";
 //import GalaxyBackground from "./GalaxyBackground";
 import { FaLinkedin, FaFacebook, FaBehance, FaInstagram } from "react-icons/fa";
 
+
 const Hero = () => {
   return (
     
