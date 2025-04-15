@@ -27,7 +27,7 @@ const GalaxyBackground = () => {
     const starMaterial = new THREE.PointsMaterial({
       size: 0.05,
       transparent: true,
-      opacity: 0.8,
+      opacity: 0.7,
     });
   
     const starVertices = [];
