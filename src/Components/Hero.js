@@ -34,7 +34,7 @@ const Hero = () => {
       </div>
 
       <div className="text-center relative z-10">
-        <h1 className="text-6xl font-bold">Hi, I'm Lahiru Imesh</h1>
+        <h1 className="text-6xl font-bold">Hi, I'm <span className="text-blue-600">Lahiru Imesh</span></h1>
         <p className="text-2xl mt-4">I am an undergraduate at the University of Moratuwa, focused on <br />developing my skills in IT and software development.</p>
 
 

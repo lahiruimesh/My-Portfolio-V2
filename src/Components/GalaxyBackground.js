@@ -15,7 +15,7 @@ const GalaxyBackground = () => {
     // Scene setup
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(80, window.innerWidth / window.innerHeight, 0.1, 1000);
-    camera.position.z = 5;
+    camera.position.z = 3;
   
     // Renderer
     const renderer = new THREE.WebGLRenderer({ alpha: true });
@@ -25,7 +25,7 @@ const GalaxyBackground = () => {
     // Create stars
     const starGeometry = new THREE.BufferGeometry();
     const starMaterial = new THREE.PointsMaterial({
-      size: 0.05,
+      size: 0.008,
       transparent: true,
       opacity: 0.7,
     });
