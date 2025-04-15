@@ -20,7 +20,6 @@ function App() {
       <Projects />
       <BeyondWorks />
       <Contact />
-      
       <Footer />
     </div>
   );
