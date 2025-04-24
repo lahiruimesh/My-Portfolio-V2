@@ -1,4 +1,5 @@
 import React from 'react';
+/*Bio, Skills, Education */
 
 const About = () => {
     return(
