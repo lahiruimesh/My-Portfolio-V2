@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import image1 from '../Assets/image2.jpg';
 
 const About = () => {
   // State to manage the current slide
@@ -24,7 +25,7 @@ const About = () => {
           {/* Left Section: Card 1 and Card 3 */}
           <div className="flex flex-col gap-6 w-full md:w-2/5">
             {/* Card 1 */}
-            <div className="bg-gradient-to-br from-gray-800 to-gray-700 rounded-xl p-6 shadow-lg h-38">
+            <div className="bg-gradient-to-br from-gray-900 to-gray rounded-xl border border-gray-600 p-6 shadow-lg h-38">
               <h2 className="text-xl font-bold">Tech enthusiast with a passion for development.</h2>
               <div className="h-4 bg-gray-600 rounded mt-4 opacity-50"></div>
             </div>
@@ -76,19 +77,33 @@ const About = () => {
         {/* Second Row: Card 4 (left), Card 5 and Card 6 (right) */}
         <div className="flex flex-col md:flex-row gap-6">
           {/* Left Section: Card 4 */}
-          <div className="bg-gradient-to-br from-purple-600 to-blue-600 rounded-xl p-6 shadow-lg flex flex-col items-center justify-center w-full md:w-3/5 h-100">
-            <h2 className="text-2xl font-bold text-center">Do you want to start a project together?</h2>
-            <button className="mt-6 bg-gray-800 text-white px-4 py-2 rounded-lg flex items-center space-x-2 hover:bg-gray-700 transition">
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"
-                ></path>
-              </svg>
-              <span>Copy my email address</span>
-            </button>
+          <div 
+            className="rounded-xl p-6 shadow-lg flex flex-col items-center justify-center w-full md:w-3/5 h-100 relative overflow-hidden"
+            style={{
+              backgroundImage: `url(${image1})`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              backgroundRepeat: 'no-repeat'
+            }}
+          >
+            {/* Gradient overlay */}
+            <div className="absolute inset-0 bg-black bg-gradient-to-br from-purple-900 to-gray-900 opacity-60"></div>
+            
+            {/* Content */}
+            <div className="relative z-10">
+              <h2 className="text-2xl font-bold text-center">Do you want to start a project together?</h2>
+              <button className="mt-6 bg-gray-800 text-white px-4 py-2 rounded-lg flex items-center space-x-2 hover:bg-gray-700 transition">
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"
+                  ></path>
+                </svg>
+                <span>Copy my email address</span>
+              </button>
+            </div>
           </div>
 
           {/* Right Section: Card 5 and Card 6 */}
