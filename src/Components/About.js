@@ -22,15 +22,15 @@ const About = () => {
         {/* First Row: Card 1, Card 3 (left), Card 2 (right) */}
         <div className="flex flex-col md:flex-row gap-6">
           {/* Left Section: Card 1 and Card 3 */}
-          <div className="flex flex-col gap-6 w-full md:w-1/3">
+          <div className="flex flex-col gap-6 w-full md:w-2/5">
             {/* Card 1 */}
-            <div className="bg-gradient-to-br from-gray-800 to-gray-700 rounded-xl p-6 shadow-lg h-32">
+            <div className="bg-gradient-to-br from-gray-800 to-gray-700 rounded-xl p-6 shadow-lg h-38">
               <h2 className="text-xl font-bold">Tech enthusiast with a passion for development.</h2>
               <div className="h-4 bg-gray-600 rounded mt-4 opacity-50"></div>
             </div>
 
             {/* Card 3 with Slides */}
-            <div className="bg-gradient-to-br from-gray-800 to-gray-700 rounded-xl p-6 shadow-lg h-64 overflow-hidden">
+            <div className="bg-gradient-to-br from-gray-800 to-gray-700 rounded-xl p-6 shadow-lg h-58 overflow-hidden">
               <h3 className="text-lg font-semibold">The Inside Scoop</h3>
               <h2 className="text-xl font-bold mt-2">Currently building a JS Animation library</h2>
               <div className="mt-4 relative w-full h-20">
@@ -57,7 +57,7 @@ const About = () => {
           </div>
 
           {/* Right Section: Card 2 */}
-          <div className="bg-gradient-to-br from-purple-600 to-blue-600 rounded-xl p-6 shadow-lg flex flex-col items-center justify-center w-full md:w-1/3 h-96">
+          <div className="bg-gradient-to-br from-purple-600 to-blue-600 rounded-xl p-6 shadow-lg flex flex-col items-center justify-center w-full md:w-3/5 h-100">
             <h2 className="text-2xl font-bold text-center">Do you want to start a project together?</h2>
             <button className="mt-6 bg-gray-800 text-white px-4 py-2 rounded-lg flex items-center space-x-2 hover:bg-gray-700 transition">
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -76,7 +76,7 @@ const About = () => {
         {/* Second Row: Card 4 (left), Card 5 and Card 6 (right) */}
         <div className="flex flex-col md:flex-row gap-6">
           {/* Left Section: Card 4 */}
-          <div className="bg-gradient-to-br from-purple-600 to-blue-600 rounded-xl p-6 shadow-lg flex flex-col items-center justify-center w-full md:w-1/3 h-96">
+          <div className="bg-gradient-to-br from-purple-600 to-blue-600 rounded-xl p-6 shadow-lg flex flex-col items-center justify-center w-full md:w-3/5 h-100">
             <h2 className="text-2xl font-bold text-center">Do you want to start a project together?</h2>
             <button className="mt-6 bg-gray-800 text-white px-4 py-2 rounded-lg flex items-center space-x-2 hover:bg-gray-700 transition">
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -92,7 +92,7 @@ const About = () => {
           </div>
 
           {/* Right Section: Card 5 and Card 6 */}
-          <div className="flex flex-col gap-6 w-full md:w-1/3">
+          <div className="flex flex-col gap-6 w-full md:w-2/5">
             {/* Card 5 */}
             <div className="bg-gradient-to-br from-gray-800 to-gray-700 rounded-xl p-6 shadow-lg h-48">
               <h2 className="text-xl font-bold">Card 5: Project Updates</h2>
