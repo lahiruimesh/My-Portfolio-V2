@@ -21,10 +21,10 @@ const About = () => {
       backgroundImage: 'linear-gradient(to bottom right, #000015,rgb(8, 2, 12))',
       backgroundColor: '#000015' // fallback color
     }}>
-      <h1 className="text-5xl font-bold text-white text-center p-8">About</h1>
+     
       <div className="container mx-auto flex flex-col gap-6 p-6">
         {/* First Row: Card 1, Card 3 (left), Card 2 (right) */}
-        <div className="flex flex-col md:flex-row gap-6">
+        <div className="flex flex-col md:flex-row mt-16 gap-6">
           {/* Left Section: Card 1 and Card 3 */}
           <div className="flex flex-col gap-6 w-full md:w-2/5">
             {/* Card 1 */}
@@ -35,7 +35,7 @@ const About = () => {
 
             {/* Card 3 with Slides */}
             <div className="bg-gradient-to-br from-gray-800 to-gray-700 rounded-xl p-6 shadow-lg h-60 overflow-hidden">
-              <div className="mt-4 relative w-full h-20">
+              <div className="mt-3 relative w-full h-20">
                 {/* Slide Container */}
                 <div
                   className="w-full h-full flex transition-transform duration-500 ease-in-out"
