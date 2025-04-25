@@ -33,7 +33,11 @@ export const ContactUs = () => {
   return (
     <motion.section
       id="contact"
-      className="p-8 bg-gradient-to-r from-black via-gray-900 to-black min-h-screen"
+      className="p-8 bg-gradient-to-r from-purple-900 via-black to-black min-h-screen"
+      style={{
+        backgroundImage: 'linear-gradient(to bottom right, #000015,rgb(12, 1, 20),rgb(25, 5, 41),rgb(8, 2, 12))',
+        backgroundColor: '#000015' // fallback color
+      }}
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 1 }}
@@ -43,7 +47,7 @@ export const ContactUs = () => {
         <form 
           ref={form} 
           onSubmit={sendEmail} 
-          className="max-w-lg mx-auto mt-6 bg-white bg-opacity-10 p-8 rounded-1g shadow-lg"
+          className="max-w-lg mx-auto mt-6 bg-white bg-opacity-10 p-8 rounded-1g shadow-5g rounded-xl border border-gray-600"
         >
           <input 
             type="text" 

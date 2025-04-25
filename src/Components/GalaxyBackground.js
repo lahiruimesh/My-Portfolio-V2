@@ -70,7 +70,7 @@ const GalaxyBackground = () => {
   }, []);
   
 
-  return <div ref={mountRef} className="absolute top-0 left-0 w-full h-full z-0 bg-black" />;
+  return <div ref={mountRef} className="absolute top-0 left-0 w-full h-full z-0" style={{ backgroundColor: '#000015' }}/>;
 };
 
 export default GalaxyBackground;

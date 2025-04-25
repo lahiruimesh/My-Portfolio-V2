@@ -67,8 +67,11 @@ const cardVariants = {
 };
 
 const Projects = () => {
-  return (
-    <section id="projects" className="p-8 bg-black min-h-screen">
+  return (<section id="projects" className="p-8 bg-black min-h-screen" style={{
+    backgroundImage: 'linear-gradient(to bottom right, #000015,rgb(8, 2, 12))',
+    backgroundColor: '#000015' // fallback color
+  }}>
+    
       <h1 className="text-5xl font-bold text-white text-center">Projects</h1>
       <p className="text-xl text-gray-300 text-center mt-6">
         My experience as an IT Undergraduate and SE Enthusiast.
