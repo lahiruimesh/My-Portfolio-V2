@@ -198,7 +198,7 @@ const About = () => {
 
           {/* Right Section: Card 2 */}
           <div 
-            className="rounded-xl p-6 shadow-lg flex flex-col w-full md:w-3/5 h-100 relative overflow-hidden"
+            className="rounded-xl p-6 shadow-lg flex flex-col w-full md:w-3/5 h-100 overflow-hidden"
             style={{
               backgroundImage: `url(${image1})`,
               backgroundSize: 'cover',

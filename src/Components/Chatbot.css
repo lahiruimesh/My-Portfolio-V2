@@ -1,6 +1,6 @@
 /* Chatbot Wrapper */
 .chatbot-wrapper {
-    position: fixed;
+    position: relative;
     bottom: 20px;
     right: 20px;
 }
