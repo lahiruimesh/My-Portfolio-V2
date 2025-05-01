@@ -230,7 +230,7 @@ const About = () => {
             }}
           >
             {/* Gradient overlay */}
-            <div className="absolute inset-0 bg-gradient-to-br from-black via-black to-purple-900 opacity-60"></div>
+            <div className="absolute inset-0 bg-gradient-to-br from-black via-black to-white opacity-50"></div>
 
             {/* Content */}
             <div className="relative z-10">
