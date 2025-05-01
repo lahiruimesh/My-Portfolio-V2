@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import image1 from '../Assets/image2.jpg';
+import image2 from '../Assets/image3.jpg';
 
 const About = () => {
   // State to manage the current slide
@@ -222,7 +223,7 @@ const About = () => {
           <div 
             className="rounded-xl p-6 shadow-lg flex flex-col w-full md:w-3/5 h-100 relative overflow-hidden"
             style={{
-              backgroundImage: `url(${image1})`,
+              backgroundImage: `url(${image2})`,
               backgroundSize: 'cover',
               backgroundPosition: 'center',
               backgroundRepeat: 'no-repeat'
