@@ -67,7 +67,7 @@ const Hero = () => {
 
       {/* Social Icons */}
       {/* Sidebar Icons for Desktop (hidden on mobile) */}
-<div className="hidden sm:flex absolute left-6 top-1/2 transform -translate-y-1/2 flex-col space-y-6 z-10">
+<div className="hidden sm:flex absolute left-10 top-1/2 transform -translate-y-1/2 flex-col space-y-6 z-10">
   {[FaLinkedin, FaFacebook, FaBehance, FaInstagram].map((Icon, index) => (
     <a
       key={index}
@@ -76,7 +76,7 @@ const Hero = () => {
       rel="noopener noreferrer"
       className="transition-transform duration-300 hover:scale-125 "
     >
-      <Icon size={22} className="text-white hover:text-blue-500 hover:shadow" />
+      <Icon size={24} className="text-white opacity-80 shadow hover:text-blue-500 hover:shadow" />
     </a>
   ))}
 </div>

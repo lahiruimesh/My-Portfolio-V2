@@ -30,8 +30,8 @@ const Navbar = () => {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <nav className="text-white fixed w-full p-6 bg-black z-50 shadow-md">
-      <div className="max-w-5xl mx-auto flex justify-between items-center">
+    <nav className="text-white fixed w-full p-6 z-50 shadow-md">
+      <div className="max-w-6xl mx-auto flex justify-between items-center">
         <h1 className="text-2xl font-bold">My Portfolio</h1>
 
         {/* Desktop Menu */}
