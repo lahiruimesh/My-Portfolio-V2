@@ -240,6 +240,7 @@ const About = () => {
 
           {/* Right Section: Card 5 and Card 6 */}
           <div className="flex flex-col gap-6 w-full md:w-2/5">
+          
             {/* Card 5 */}
             <div className="bg-gradient-to-br from-gray-800 to-gray-700 rounded-xl p-6 shadow-lg h-48">
               <h2 className="text-xl font-bold">Card 5: Project Updates</h2>
