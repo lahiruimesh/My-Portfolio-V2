@@ -25,9 +25,9 @@ const GalaxyBackground = () => {
     // Create stars
     const starGeometry = new THREE.BufferGeometry();
     const starMaterial = new THREE.PointsMaterial({
-      size: 0.008,
+      size: 0.045,
       transparent: true,
-      opacity: 0.7,
+      opacity: 0.8,
     });
   
     const starVertices = [];
@@ -45,8 +45,8 @@ const GalaxyBackground = () => {
     // Animation loop
     const animate = () => {
       requestAnimationFrame(animate);
-      stars.rotation.y += 0.0005;
-      stars.rotation.x += 0.0005;
+      stars.rotation.y += 0.0006;
+      stars.rotation.x += 0.0006;
       renderer.render(scene, camera);
     };
     animate();
