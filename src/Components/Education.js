@@ -8,10 +8,9 @@ const Education = () => {
       degree: "Bachelor of Information Technology",
       institution: "University of Moratuwa",
       duration: "2022 - 2027",
-      description: "Specialized in Machine Learning and Artificial Intelligence. Completed thesis on Natural Language Processing.",
+      description: "Pursuing a degree in Information Technology, specializing in software development and innovative technologies.",
       achievements: [
-        "",
-        ""
+       
       ],
       color: "blue"
     },
@@ -20,10 +19,10 @@ const Education = () => {
       //degree: "Bachelor of Software Engineering",
       institution: "Bandarawela Central Collage",
       duration: "2018 - 2021",
-      description: "Comprehensive study of software development, algorithms, and system design. Active member of coding club.",
+      description: "Completed GCE Advanced Level (2021) in the Mathematics stream, achieving A grades in Combined Mathematics.",
       achievements: [
-        "",
-        ""
+        "GCE Advanced Level (2021) Combined Maths - A Chemistry - A Physics - A ",
+        "Z-Score - 1.6220"
       ],
       color: "green"
     },
@@ -32,10 +31,9 @@ const Education = () => {
       //degree: "High School Diploma",
       institution: "Bandarawela Dharmapala Collage",
       duration: "2012 - 2018",
-      description: "Focused on STEM subjects with particular emphasis on Mathematics and Computer Science.",
+      description: "Completed GCE Ordinary Level, excelling in core subjects and building a strong academic foundation.",
       achievements: [
-        "",
-        ""
+        "GCE Ordinary Level (2017) - 8 A’s and 1 C (English) in Sinhala Medium"
       ],
       color: "purple"
     }
