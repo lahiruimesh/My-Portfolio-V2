@@ -6,7 +6,8 @@ import Projects from './Components/Projects';
 import BeyondWorks from './Components/BeyondWorks';
 import Contact from './Components/Contact';
 import Footer from './Components/Footer';
-import Chatbot from './Components/Chatbot';
+//import Chatbot from './Components/Chatbot';
+import Education from './Components/Education';
 import GalaxyBackground from "./Components/GalaxyBackground";
 
 function App() {
@@ -14,12 +15,13 @@ function App() {
     <div>
       <Navbar />
       <GalaxyBackground />
-      <Chatbot />
+        {/* <Chatbot /> */}
       <Hero />
       <About />
       <Projects />
+      <Education />
       <BeyondWorks />
-      <Contact />
+    <Contact /> 
       <Footer />
     </div>
   );

@@ -64,7 +64,7 @@ const Navbar = () => {
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex gap-8">
-          {['About', 'Projects', 'Beyond Works', 'Contact'].map((item) => (
+          {['About', 'Projects', 'Education', 'Beyond Works', 'Contact'].map((item) => (
             <li key={item} className="hover:text-purple-800 hover:font-bold">
               <a href={`#${item.toLowerCase().replace(' ', '')}`}>{item}</a>
             </li>
@@ -82,7 +82,7 @@ const Navbar = () => {
       {/* Mobile Dropdown */}
       {isOpen && (
         <ul className="md:hidden flex flex-col gap-4 mt-4 bg-black p-4 rounded-md">
-          {['About', 'Projects', 'Beyond Works', 'Contact'].map((item) => (
+          {['About', 'Projects', 'Education', 'Beyond Works', 'Contact'].map((item) => (
             <li
               key={item}
               className="relative pb-1 border-b-2 border-transparent hover:border-purple-800 transition-all duration-300 hover:font-bold"
