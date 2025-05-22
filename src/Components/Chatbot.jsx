@@ -58,43 +58,43 @@ const Chatbot = () => {
       </button>
 
       {isOpen && (
-        <div className="fixed bottom-28 right-5 w-80 bg-black/00 border-2 border-blue-600/20 rounded-xl shadow-xl flex flex-col animate-fadeIn">
-          <div
-            className="max-h-72 overflow-y-auto p-6 flex flex-col space-y-2 scroll-smooth"
-            ref={chatboxRef}
-          >
-            {messages.map((msg, index) => (
-              <div
-                key={index}
-                className={`px-4 py-3 rounded-xl text-sm font-mono max-w-[80%] ${
-                  msg.sender === "user"
-                    ? "bg-blue-600 text-white self-end shadow-md"
-                    : "bg-white/10 text-white self-start"
-                }`}
-              >
-                {msg.text}
-              </div>
-            ))}
-          </div>
-
-          <div className="flex p-3 border-t border-white/20">
-            <input
-              type="text"
-              value={input}
-              onChange={(e) => setInput(e.target.value)}
-              placeholder="Type a message..."
-              className="flex-1 p-2 bg-black text-white border border-blue-600/60 rounded-lg outline-none font-mono text-sm placeholder:text-gray-400"
-            />
-            <button
-              onClick={handleSendMessage}
-              className="ml-2 px-3 py-2 bg-blue-600/20 text-blue-500 border border-blue-600 rounded-md hover:bg-blue-600/40 hover:shadow-lg font-mono text-sm transition"
-            >
-              Send
-            </button>
-          </div>
+  <div className="fixed bottom-24 sm:bottom-28 right-4 w-[90vw] sm:w-80 bg-gradient-to-br from-purple-900 to-black shadow-purple-600/20 border-2 border-blue-600/20 rounded-xl shadow-xl flex flex-col animate-fadeIn max-h-[75vh] sm:max-h-[60vh]">
+    <div
+      className="flex-1 overflow-y-auto p-4 sm:p-6 flex flex-col space-y-2 scroll-smooth"
+      ref={chatboxRef}
+    >
+      {messages.map((msg, index) => (
+        <div
+          key={index}
+          className={`px-4 py-3 rounded-xl text-sm font-mono max-w-[80%] ${
+            msg.sender === "user"
+              ? "bg-blue-600 text-white self-end shadow-md"
+              : "bg-white/10 text-white self-start"
+          }`}
+        >
+          {msg.text}
         </div>
-      )}
+      ))}
     </div>
+
+    <div className="flex p-3 border-t border-white/20 bg-black/40">
+      <input
+        type="text"
+        value={input}
+        onChange={(e) => setInput(e.target.value)}
+        placeholder="Type a message..."
+        className="flex-1 p-2 bg-black opacity-70 text-white border border-blue-600/60 rounded-lg outline-none font-mono text-sm placeholder:text-gray-400"
+      />
+      <button
+        onClick={handleSendMessage}
+        className="ml-2 px-3 py-2 bg-blue-600/20 text-blue-500 border border-blue-600 rounded-md hover:bg-blue-600/40 hover:shadow-lg font-mono text-sm transition"
+      >
+        Send
+      </button>
+    </div>
+  </div>
+)}
+</div>
   );
 };
 

@@ -10,7 +10,8 @@ const Education = () => {
       duration: "2022 - 2027",
       description: "Pursuing a degree in Information Technology, specializing in software development and innovative technologies.",
       achievements: [
-       
+        "",
+        ""
       ],
       color: "blue"
     },
