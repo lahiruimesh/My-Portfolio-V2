@@ -13,7 +13,7 @@ const projectCards = [
   {
     id: 2,
     title: "ROTARACT CLUB OF UNIVERSITY OF MORATUWA",
-    description: " Served as a Design Committee Member and Co-Director of PR Avenue for Data Storm 5.0 (2024–25), contributing to event branding, promotional materials, and public relations strategies.",
+    description: "I served as a Design Committee Member for Data Storm 5.0 and Co-Director of PR Avenue (2024–25), contributing to event branding, promotional content, and public relations efforts to boost engagement and visibility.",
     image: RM,
   },
   {
@@ -33,7 +33,7 @@ const BeyondWorks = () => {
             }}>
 
               <h2 className="text-3xl font-bold text-center">Beyond Works</h2>
-              <p className="text-center mt-4">Any additional work experience or achievements.</p>
+              <p className="text-center mt-4">Any additional work experience and achievements.</p>
 
               <div className="m-20 grid grid-cols-1 md:grid-cols-3 justify-items-center gap-6">
           {projectCards.map((card) => (
