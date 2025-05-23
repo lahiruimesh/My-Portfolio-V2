@@ -55,7 +55,15 @@ export default Hero;
 
 import React from "react";
 import GalaxyBackground from "./GalaxyBackground";
-import { FaLinkedin, FaFacebook, FaBehance, FaInstagram } from "react-icons/fa";
+import { FaLinkedin, FaFacebook, FaBehance, FaGithub } from "react-icons/fa";
+
+const socialLinks = [
+  { icon: FaLinkedin, url: 'https://linkedin.com/in/lahiru-imesh-67350025a/' },
+  { icon: FaFacebook, url: 'https://www.facebook.com/lahiru.imesh.52' },
+  { icon: FaBehance, url: 'https://www.behance.net/galleries/graphic-design' },
+  { icon: FaGithub, url: 'https://github.com/lahiruimesh' },
+];
+
 
 const Hero = () => {
   return (
@@ -68,32 +76,21 @@ const Hero = () => {
       {/* Social Icons */}
       {/* Sidebar Icons for Desktop (hidden on mobile) */}
 <div className="hidden sm:flex absolute left-10 top-1/2 transform -translate-y-1/2 flex-col space-y-6 z-10">
-  {[FaLinkedin, FaFacebook, FaBehance, FaInstagram].map((Icon, index) => (
-    <a
-      key={index}
-      href="#"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="transition-transform duration-300 hover:scale-125 "
-    >
-      <Icon size={24} className="text-white opacity-80 shadow hover:text-blue-500 hover:shadow" />
-    </a>
-  ))}
+{socialLinks.map(({ icon: Icon, url }, index) => (
+  <a key={index} href={url} target="_blank" rel="noopener noreferrer">
+    <Icon size={24} className="text-white hover:text-blue-500" />
+  </a>
+))}
+
 </div>
 
 {/* Bottom Icons for Mobile (hidden on sm and up) */}
 <div className="flex sm:hidden absolute bottom-6 left-1/2 transform -translate-x-1/2 space-x-6 z-10 pb-8">
-  {[FaLinkedin, FaFacebook, FaBehance, FaInstagram].map((Icon, index) => (
-    <a
-      key={index}
-      href="#"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="transition-transform duration-300 hover:scale-125"
-    >
-      <Icon size={22} className="text-white hover:text-blue-500 hover:shadow" />
-    </a>
-  ))}
+{socialLinks.map(({ icon: Icon, url }, index) => (
+  <a key={index} href={url} target="_blank" rel="noopener noreferrer">
+    <Icon size={24} className="text-white hover:text-blue-500" />
+  </a>
+))}
 </div>
 
 

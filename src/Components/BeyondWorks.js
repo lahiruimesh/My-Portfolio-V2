@@ -1,26 +1,26 @@
 import react from 'react';
-import Image1 from '../Assets/pic.jpg';
-import Image2 from '../Assets/pic.jpg';
-import Image3 from '../Assets/pic.jpg';
+import IEEE from '../Assets/IEEE.jpg';
+import RM from '../Assets/RM.jpg';
+import PB from '../Assets/PB.jpg';
 
 const projectCards = [
   {
     id: 1,
-    title: "Project 1",
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    image: Image1,
+    title: " INTERNSHIP TRAINEE -  People's Bank Sri Lanka (2022 - 2023)",
+    description: "Completed a six-month internship at People's Bank after A-levels, gaining hands-on experience in banking operations, financial procedures, and customer service.",
+    image: PB,
   },
   {
     id: 2,
-    title: "Project 2",
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    image: Image2,
+    title: "ROTARACT CLUB OF UNIVERSITY OF MORATUWA",
+    description: " Served as a Design Committee Member and Co-Director of PR Avenue for Data Storm 5.0 (2024–25), contributing to event branding, promotional materials, and public relations strategies.",
+    image: RM,
   },
   {
     id: 3,
-    title: "Project 3",
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    image: Image3,
+    title: " IEEE STUDENT BRANCH UNIVERSITY OF MORATUWA",
+    description: " Organizing Committee Member of MERCon 2023, actively involved in coordinating logistics and supporting the smooth execution of the international engineering research conference.",
+    image: IEEE,
   }
 ]
 
