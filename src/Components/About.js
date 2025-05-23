@@ -75,22 +75,19 @@ const About = () => {
                     <h2 className="text-2xl font-bold bg-gradient-to-br from-white to-blue-400 text-transparent bg-clip-text">Backend</h2>
                       <div className='m-5 grid grid-cols-1 md:grid-cols-3 justify-items-center gap-4'>
                         <div className="bg-purple-900 w-[7rem] h-12 border rounded-2xl border-gray-500 flex items-center justify-center">
-                            <h3 className="text-white text-base">React Js</h3>
+                            <h3 className="text-white text-base">Node Js</h3>
                         </div>
                         <div className="bg-purple-900 w-[7rem] h-12 border rounded-2xl border-gray-500 flex items-center justify-center">
-                            <h3 className="text-white text-base">Tailwind CSS</h3>
+                            <h3 className="text-white text-base">MongoDB</h3>
                         </div>
                         <div className="bg-purple-900 w-[7rem] h-12 border rounded-2xl border-gray-500 flex items-center justify-center">
-                            <h3 className="text-white text-base">Javascript</h3>
+                            <h3 className="text-white text-base">Express Js</h3>
                         </div>
                         <div className="bg-purple-900 w-[7rem] h-12 border rounded-2xl border-gray-500 flex items-center justify-center">
-                            <h3 className="text-white text-base">Next Js</h3>
+                            <h3 className="text-white text-base">Nest Js</h3>
                         </div>
                         <div className="bg-purple-900 w-[7rem] h-12 border rounded-2xl border-gray-500 flex items-center justify-center">
-                            <h3 className="text-white text-base">Material UI</h3>
-                        </div>
-                        <div className="bg-purple-900 w-[7rem] h-12 border rounded-2xl border-gray-500 flex items-center justify-center">
-                            <h3 className="text-white text-base">Bootstrap</h3>
+                            <h3 className="text-white text-base">MySQL</h3>
                         </div>
                       </div>
                   </div>
@@ -99,98 +96,53 @@ const About = () => {
                     <h2 className="text-2xl font-bold bg-gradient-to-br from-white to-blue-400 text-transparent bg-clip-text">Programming</h2>
                       <div className='m-5 grid grid-cols-1 md:grid-cols-3 justify-items-center gap-4'>
                         <div className="bg-purple-900 w-[7rem] h-12 border rounded-2xl border-gray-500 flex items-center justify-center">
-                            <h3 className="text-white text-base">React Js</h3>
+                            <h3 className="text-white text-base">C</h3>
                         </div>
                         <div className="bg-purple-900 w-[7rem] h-12 border rounded-2xl border-gray-500 flex items-center justify-center">
-                            <h3 className="text-white text-base">Tailwind CSS</h3>
+                            <h3 className="text-white text-base">C#</h3>
                         </div>
                         <div className="bg-purple-900 w-[7rem] h-12 border rounded-2xl border-gray-500 flex items-center justify-center">
-                            <h3 className="text-white text-base">Javascript</h3>
-                        </div>
-                        <div className="bg-purple-900 w-[7rem] h-12 border rounded-2xl border-gray-500 flex items-center justify-center">
-                            <h3 className="text-white text-base">Next Js</h3>
-                        </div>
-                        <div className="bg-purple-900 w-[7rem] h-12 border rounded-2xl border-gray-500 flex items-center justify-center">
-                            <h3 className="text-white text-base">Material UI</h3>
-                        </div>
-                        <div className="bg-purple-900 w-[7rem] h-12 border rounded-2xl border-gray-500 flex items-center justify-center">
-                            <h3 className="text-white text-base">Bootstrap</h3>
+                            <h3 className="text-white text-base">Java</h3>
                         </div>
                       </div>
                   </div>
                   {/* Slide 5 */}
                   <div className="w-full flex-shrink-0 text-center">
-                    <h2 className="text-2xl font-bold bg-gradient-to-br from-white to-blue-400 text-transparent bg-clip-text">IDE's</h2>
+                    <h2 className="text-2xl font-bold bg-gradient-to-br from-white to-blue-400 text-transparent bg-clip-text">Design</h2>
                       <div className='m-5 grid grid-cols-1 md:grid-cols-3 justify-items-center gap-4'>
                         <div className="bg-purple-900 w-[7rem] h-12 border rounded-2xl border-gray-500 flex items-center justify-center">
-                            <h3 className="text-white text-base">React Js</h3>
+                            <h3 className="text-white text-base">Photoshop</h3>
                         </div>
                         <div className="bg-purple-900 w-[7rem] h-12 border rounded-2xl border-gray-500 flex items-center justify-center">
-                            <h3 className="text-white text-base">Tailwind CSS</h3>
+                            <h3 className="text-white text-base">Illustrator</h3>
                         </div>
                         <div className="bg-purple-900 w-[7rem] h-12 border rounded-2xl border-gray-500 flex items-center justify-center">
-                            <h3 className="text-white text-base">Javascript</h3>
+                            <h3 className="text-white text-base">Figma</h3>
                         </div>
                         <div className="bg-purple-900 w-[7rem] h-12 border rounded-2xl border-gray-500 flex items-center justify-center">
-                            <h3 className="text-white text-base">Next Js</h3>
-                        </div>
-                        <div className="bg-purple-900 w-[7rem] h-12 border rounded-2xl border-gray-500 flex items-center justify-center">
-                            <h3 className="text-white text-base">Material UI</h3>
-                        </div>
-                        <div className="bg-purple-900 w-[7rem] h-12 border rounded-2xl border-gray-500 flex items-center justify-center">
-                            <h3 className="text-white text-base">Bootstrap</h3>
+                            <h3 className="text-white text-base">Canva</h3>
                         </div>
                       </div>
                   </div>
                   {/* Slide 6 */}
                   <div className="w-full flex-shrink-0 text-center">
-                    <h2 className="text-2xl font-bold bg-gradient-to-br from-white to-blue-400 text-transparent bg-clip-text">Design</h2>
+                    <h2 className="text-2xl font-bold bg-gradient-to-br from-white to-blue-400 text-transparent bg-clip-text">Tools & Platforms</h2>
                       <div className='m-5 grid grid-cols-1 md:grid-cols-3 justify-items-center gap-4'>
                         <div className="bg-purple-900 w-[7rem] h-12 border rounded-2xl border-gray-500 flex items-center justify-center">
-                            <h3 className="text-white text-base">React Js</h3>
+                            <h3 className="text-white text-base">VS Code</h3>
                         </div>
                         <div className="bg-purple-900 w-[7rem] h-12 border rounded-2xl border-gray-500 flex items-center justify-center">
-                            <h3 className="text-white text-base">Tailwind CSS</h3>
+                            <h3 className="text-white text-base">Postman</h3>
                         </div>
                         <div className="bg-purple-900 w-[7rem] h-12 border rounded-2xl border-gray-500 flex items-center justify-center">
-                            <h3 className="text-white text-base">Javascript</h3>
+                            <h3 className="text-white text-base">Git</h3>
                         </div>
                         <div className="bg-purple-900 w-[7rem] h-12 border rounded-2xl border-gray-500 flex items-center justify-center">
-                            <h3 className="text-white text-base">Next Js</h3>
-                        </div>
-                        <div className="bg-purple-900 w-[7rem] h-12 border rounded-2xl border-gray-500 flex items-center justify-center">
-                            <h3 className="text-white text-base">Material UI</h3>
-                        </div>
-                        <div className="bg-purple-900 w-[7rem] h-12 border rounded-2xl border-gray-500 flex items-center justify-center">
-                            <h3 className="text-white text-base">Bootstrap</h3>
+                            <h3 className="text-white text-base">Github</h3>
                         </div>
                       </div>
                   </div>
-                  {/* Slide 7 */}
-                  <div className="w-full flex-shrink-0 text-center">
-                    <h2 className="text-2xl font-bold bg-gradient-to-br from-white to-blue-400 text-transparent bg-clip-text">Others</h2>
-                      <div className='m-5 grid grid-cols-1 md:grid-cols-3 justify-items-center gap-4'>
-                        <div className="bg-purple-900 w-[7rem] h-12 border rounded-2xl border-gray-500 flex items-center justify-center">
-                            <h3 className="text-white text-base">React Js</h3>
-                        </div>
-                        <div className="bg-purple-900 w-[7rem] h-12 border rounded-2xl border-gray-500 flex items-center justify-center">
-                            <h3 className="text-white text-base">Tailwind CSS</h3>
-                        </div>
-                        <div className="bg-purple-900 w-[7rem] h-12 border rounded-2xl border-gray-500 flex items-center justify-center">
-                            <h3 className="text-white text-base">Javascript</h3>
-                        </div>
-                        <div className="bg-purple-900 w-[7rem] h-12 border rounded-2xl border-gray-500 flex items-center justify-center">
-                            <h3 className="text-white text-base">Next Js</h3>
-                        </div>
-                        <div className="bg-purple-900 w-[7rem] h-12 border rounded-2xl border-gray-500 flex items-center justify-center">
-                            <h3 className="text-white text-base">Material UI</h3>
-                        </div>
-                        <div className="bg-purple-900 w-[7rem] h-12 border rounded-2xl border-gray-500 flex items-center justify-center">
-                            <h3 className="text-white text-base">Bootstrap</h3>
-                        </div>
-                      </div>
-                  </div>
-
+                  
                 </div>
               </div>
             </div>

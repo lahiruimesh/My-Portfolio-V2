@@ -10,14 +10,14 @@ const projectCards = [
   {
     id: 1,
     title: "Bun & Run – Smart Fast Food Vending Machine",
-    description: "A responsive and modern personal portfolio built with React and Tailwind CSS. Showcases my projects, skills, and contact information in a clean single-page layout.",
+    description: "Bun & Run is a smart vending machine with QR payments, touch-screen UI, and real-time inventory updates—built in 3 months using ESP-32, MicroPython, Node.js, and Firebase.",
     image: BNR,
     technologies: [FaJsSquare, FaNodeJs, SiFirebase],
   },
   {
     id: 2,
     title: "Personal Portfolio Website",
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    description: "A responsive and modern personal portfolio built with React and Tailwind CSS. Showcases my projects, skills, and contact information in a clean single-page layout.",
     image: PF,
     technologies: [FaReact, FaJsSquare, FaCss3Alt],
   },
@@ -36,7 +36,7 @@ const Projects = () => {
       }}
     >
       <h1 className="text-3xl font-bold text-white text-center">Projects</h1>
-      <p className="text text-gray-300 text-center mt-6">
+      <p className="text-lg text-gray-300 text-center mt-6">
         My experience as an IT Undergraduate and SE Enthusiast.
       </p>
 
