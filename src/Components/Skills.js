@@ -9,8 +9,6 @@ import i7 from '../Assets/Skills/i7.png';
 import i8 from '../Assets/Skills/i8.png';
 import i9 from '../Assets/Skills/i9.png';
 import i10 from '../Assets/Skills/i10.png';
-import i11 from '../Assets/Skills/i11.png';
-import i12 from '../Assets/Skills/i12.png';
 import i13 from '../Assets/Skills/i13.png';
 import i14 from '../Assets/Skills/i14.png';
 import i15 from '../Assets/Skills/i15.png';
@@ -18,22 +16,26 @@ import i16 from '../Assets/Skills/i16.png';
 import i17 from '../Assets/Skills/i17.png';
 import i18 from '../Assets/Skills/i18.png';
 import i19 from '../Assets/Skills/i19.png';
+import i20 from '../Assets/Skills/i20.jpg';
+import i22 from '../Assets/Skills/i22.png';
+import i23 from '../Assets/Skills/i23.png';
+import i24 from '../Assets/Skills/i24.png';
 
 const skillCards = [
   {
     id: 1,
     title: "Frontend",
-    image: [i7,i10, i13, i17, i18],
+    image: [i7, i13, i17, i23, i24],
   },
   {
     id: 2,
     title: "Backend",
-    image: [i11, i14, i16],
+    image: [i20, i14, i16],
   },
   {
     id: 3,
     title: "Programming",
-    image: [i2, i3, i9, i10],
+    image: [i2, i3, i9, i10, i18],
   },
   {
     id: 4,
@@ -43,7 +45,7 @@ const skillCards = [
   {
     id: 5,
     title: "Tools & Platforms",
-    image: [i5, i6,i19],
+    image: [i5, i6, i19, i22],
   }
 ];
 

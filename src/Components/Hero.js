@@ -55,6 +55,7 @@ export default Hero;
 
 import React from "react";
 import GalaxyBackground from "./GalaxyBackground";
+import CV from '../Assets/CV.pdf';
 import { FaLinkedin, FaFacebook, FaBehance, FaGithub } from "react-icons/fa";
 
 const socialLinks = [
@@ -118,7 +119,7 @@ const Hero = () => {
           </a>
 
           <a
-            href="/resume.pdf" // <-- Set this to your actual resume path
+            href={CV} // <-- Set this to your actual resume path
             download
             className="bg-gradient-to-br from-purple-600 to-blue-600 hover:bg-transparent text-white font-bold py-3 px-7 rounded-full border border-blue-800 hover:border-white flex items-center gap-2 transition duration-300"
           >
