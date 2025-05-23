@@ -27,7 +27,7 @@ const projectCards = [
 const BeyondWorks = () => {
     return(
         
-            <section id="beyond" className="p-8 bg-black text-white min-h-screen" style={{
+            <section id="beyondworks" className="p-8 bg-black text-white min-h-screen" style={{
               backgroundImage: 'linear-gradient(to top left,rgb(13, 0, 22),rgb(24, 1, 39),rgb(15, 2, 27),rgb(35, 0, 59))',
               backgroundColor: '#000015' // fallback color
             }}>

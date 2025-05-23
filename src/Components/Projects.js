@@ -1,46 +1,27 @@
 import React from "react";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { SiFirebase } from 'react-icons/si';
 import BNR from "../Assets/BNR.jpg";
-import myImage2 from "../Assets/pic2.jpg";
+import PF from "../Assets/PF.png";
+import { FaReact, FaCss3Alt, FaJsSquare, FaNodeJs } from 'react-icons/fa';
 
 // Project data
 const projectCards = [
   {
     id: 1,
     title: "Bun & Run – Smart Fast Food Vending Machine",
-    description: "Bun & Run is a smart vending machine with QR payments, touch-screen UI, and real-time inventory updates—built in 3 months using ESP-32, MicroPython, Node.js, and Firebase.",
+    description: "A responsive and modern personal portfolio built with React and Tailwind CSS. Showcases my projects, skills, and contact information in a clean single-page layout.",
     image: BNR,
+    technologies: [FaJsSquare, FaNodeJs, SiFirebase],
   },
   {
     id: 2,
-    title: "Project 2",
+    title: "Personal Portfolio Website",
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    image: myImage2,
+    image: PF,
+    technologies: [FaReact, FaJsSquare, FaCss3Alt],
   },
-  {
-    id: 3,
-    title: "Project 3",
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    image: myImage2,
-  },
-  {
-    id: 4,
-    title: "Project 4",
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    image: myImage2,
-  },
-  {
-    id: 5,
-    title: "Project 5",
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    image: myImage2,
-  },
-  {
-    id: 6,
-    title: "Project 6",
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    image: myImage2,
-  },
+
 ];
 
 
@@ -50,12 +31,12 @@ const Projects = () => {
       id="projects"
       className="p-8 bg-black min-h-screen"
       style={{
-        backgroundImage: "linear-gradient(to bottom right, #000015, rgb(8, 2, 12))",
+        backgroundImage: "linear-gradient(to bottom right,rgb(13, 0, 22),rgb(24, 1, 39),rgb(15, 2, 27),rgb(35, 0, 59))",
         backgroundColor: "#000015",
       }}
     >
-      <h1 className="text-5xl font-bold text-white text-center">Projects</h1>
-      <p className="text-xl text-gray-300 text-center mt-6">
+      <h1 className="text-3xl font-bold text-white text-center">Projects</h1>
+      <p className="text text-gray-300 text-center mt-6">
         My experience as an IT Undergraduate and SE Enthusiast.
       </p>
 
@@ -88,25 +69,37 @@ const Projects = () => {
               {card.description}
             </p>
 
-            {/* Social media icons */}
-            <div className="flex justify-left ml-5 opacity-80 gap-6 mt-4 mb-4">
-              <a
-                href="#"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-white hover:text-blue-500 transition-transform transform hover:scale-125"
-              >
-                <FaLinkedin size={24} />
-              </a>
-              <a
-                href="#"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-white hover:text-gray-400 transition-transform transform hover:scale-125"
-              >
-                <FaGithub size={24} />
-              </a>
-            </div>
+            {/* Social media + technologies icons */}
+              <div className="flex items-center justify-between px-4 mt-4 mb-4 opacity-80">
+                {/* Social media icons */}
+                <div className="flex gap-4">
+                  <a
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-white hover:text-blue-500 transition-transform transform hover:scale-125"
+                  >
+                    <FaLinkedin size={20} />
+                  </a>
+                  <a
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-white hover:text-gray-400 transition-transform transform hover:scale-125"
+                  >
+                    <FaGithub size={20} />
+                  </a>
+                </div>
+
+                {/* Technology icons */}
+                <div className="flex gap-3 pr-4">
+                  {card.technologies?.map((TechIcon, index) => (
+                    <TechIcon key={index} size={20} className="text-white hover:text-cyan-400 opacity-80 transition-transform transform hover:scale-110 " />
+                  ))}
+                </div>
+              </div>
+
+            
           </div>
         ))}
       </div>

@@ -42,7 +42,7 @@ export const ContactUs = () => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 1 }}
     >
-      <h2 className="text-5xl font-bold text-white text-center">Contact Me</h2>
+      <h2 className="text-3xl font-bold text-white text-center">Contact Me</h2>
       <div className="max-w-2xl mx-auto m-12">
         <form 
           ref={form} 
