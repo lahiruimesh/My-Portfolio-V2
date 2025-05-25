@@ -18,7 +18,7 @@ const Education = () => {
       duration: "2018 - 2021",
       description: "Completed GCE Advanced Level (2021) in the Mathematics stream, achieving A grades in Combined Mathematics.",
       achievements: [
-        "GCE Advanced Level (2021) Combined Maths - A Chemistry - A Physics - A",
+        "GCE Advanced Level (2021) Combined Maths - A Chemistry - A Physics - C",
         "Z-Score - 1.6220"
       ],
       color: "green"
