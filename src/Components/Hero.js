@@ -113,7 +113,7 @@ const Hero = () => {
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-10">
           <a
             href="#contact"
-            className="bg-transparent hover:bg-gradient-to-br from-purple-600 to-blue-600 text-white font-semibold hover:text-white py-3 px-9 border border-white hover:border-transparent rounded-full transition duration-300"
+            className="bg-transparent hover:bg-gradient-to-br from-purple-600 to-blue-600 text-white font-semibold hover:text-white py-3 px-11 border border-white hover:border-transparent rounded-full transition duration-300"
           >
             Contact Me
           </a>

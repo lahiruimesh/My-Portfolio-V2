@@ -5,7 +5,7 @@ import image2 from '../Assets/image3.jpg';
 const About = () => {
   // State to manage the current slide
   const [currentSlide, setCurrentSlide] = useState(0);
-  const totalSlides = 7;
+  const totalSlides = 6;
 
   // Effect to handle slide transitions every 3 seconds
   useEffect(() => {
@@ -50,22 +50,22 @@ const About = () => {
                   <div className="w-full flex-shrink-0 text-center">
                     <h2 className="text-2xl font-bold bg-gradient-to-br from-white to-blue-400 text-transparent bg-clip-text">Frontend</h2>
                       <div className='m-5 grid grid-cols-2 md:grid-cols-3 justify-items-center gap-4'>
-                        <div className="bg-purple-900 w-[7rem] h-12 border rounded-2xl border-gray-500 flex items-center justify-center">
+                        <div className="bg-purple-900 w-[6rem] h-12 border rounded-2xl border-gray-500 flex items-center justify-center">
                             <h3 className="text-white text-base">React Js</h3>
                         </div>
-                        <div className="bg-purple-900 w-[7rem] h-12 border rounded-2xl border-gray-500 flex items-center justify-center">
+                        <div className="bg-purple-900 w-[6rem] h-12 border rounded-2xl border-gray-500 flex items-center justify-center">
                             <h3 className="text-white text-base">Tailwind CSS</h3>
                         </div>
-                        <div className="bg-purple-900 w-[7rem] h-12 border rounded-2xl border-gray-500 flex items-center justify-center">
+                        <div className="bg-purple-900 w-[6rem] h-12 border rounded-2xl border-gray-500 flex items-center justify-center">
                             <h3 className="text-white text-base">Javascript</h3>
                         </div>
-                        <div className="bg-purple-900 w-[7rem] h-12 border rounded-2xl border-gray-500 flex items-center justify-center">
+                        <div className="bg-purple-900 w-[6rem] h-12 border rounded-2xl border-gray-500 flex items-center justify-center">
                             <h3 className="text-white text-base">Next Js</h3>
                         </div>
-                        <div className="bg-purple-900 w-[7rem] h-12 border rounded-2xl border-gray-500 flex items-center justify-center">
+                        <div className="bg-purple-900 w-[6rem] h-12 border rounded-2xl border-gray-500 flex items-center justify-center">
                             <h3 className="text-white text-base">Material UI</h3>
                         </div>
-                        <div className="bg-purple-900 w-[7rem] h-12 border rounded-2xl border-gray-500 flex items-center justify-center">
+                        <div className="bg-purple-900 w-[6rem] h-12 border rounded-2xl border-gray-500 flex items-center justify-center">
                             <h3 className="text-white text-base">Bootstrap</h3>
                         </div>
                       </div>
@@ -74,19 +74,19 @@ const About = () => {
                   <div className="w-full flex-shrink-0 text-center">
                     <h2 className="text-2xl font-bold bg-gradient-to-br from-white to-blue-400 text-transparent bg-clip-text">Backend</h2>
                       <div className='m-5 grid grid-cols-2 md:grid-cols-3 justify-items-center gap-4'>
-                        <div className="bg-purple-900 w-[7rem] h-12 border rounded-2xl border-gray-500 flex items-center justify-center">
+                        <div className="bg-purple-900 w-[6rem] h-12 border rounded-2xl border-gray-500 flex items-center justify-center">
                             <h3 className="text-white text-base">Node Js</h3>
                         </div>
-                        <div className="bg-purple-900 w-[7rem] h-12 border rounded-2xl border-gray-500 flex items-center justify-center">
+                        <div className="bg-purple-900 w-[6rem] h-12 border rounded-2xl border-gray-500 flex items-center justify-center">
                             <h3 className="text-white text-base">MongoDB</h3>
                         </div>
-                        <div className="bg-purple-900 w-[7rem] h-12 border rounded-2xl border-gray-500 flex items-center justify-center">
+                        <div className="bg-purple-900 w-[6rem] h-12 border rounded-2xl border-gray-500 flex items-center justify-center">
                             <h3 className="text-white text-base">Express Js</h3>
                         </div>
-                        <div className="bg-purple-900 w-[7rem] h-12 border rounded-2xl border-gray-500 flex items-center justify-center">
+                        <div className="bg-purple-900 w-[6rem] h-12 border rounded-2xl border-gray-500 flex items-center justify-center">
                             <h3 className="text-white text-base">Nest Js</h3>
                         </div>
-                        <div className="bg-purple-900 w-[7rem] h-12 border rounded-2xl border-gray-500 flex items-center justify-center">
+                        <div className="bg-purple-900 w-[6rem] h-12 border rounded-2xl border-gray-500 flex items-center justify-center">
                             <h3 className="text-white text-base">MySQL</h3>
                         </div>
                       </div>
@@ -95,13 +95,13 @@ const About = () => {
                   <div className="w-full flex-shrink-0 text-center">
                     <h2 className="text-2xl font-bold bg-gradient-to-br from-white to-blue-400 text-transparent bg-clip-text">Programming</h2>
                       <div className='m-5 grid grid-cols-2 md:grid-cols-3 justify-items-center gap-4'>
-                        <div className="bg-purple-900 w-[7rem] h-12 border rounded-2xl border-gray-500 flex items-center justify-center">
+                        <div className="bg-purple-900 w-[6rem] h-12 border rounded-2xl border-gray-500 flex items-center justify-center">
                             <h3 className="text-white text-base">C</h3>
                         </div>
-                        <div className="bg-purple-900 w-[7rem] h-12 border rounded-2xl border-gray-500 flex items-center justify-center">
+                        <div className="bg-purple-900 w-[6rem] h-12 border rounded-2xl border-gray-500 flex items-center justify-center">
                             <h3 className="text-white text-base">C#</h3>
                         </div>
-                        <div className="bg-purple-900 w-[7rem] h-12 border rounded-2xl border-gray-500 flex items-center justify-center">
+                        <div className="bg-purple-900 w-[6rem] h-12 border rounded-2xl border-gray-500 flex items-center justify-center">
                             <h3 className="text-white text-base">Java</h3>
                         </div>
                       </div>
@@ -110,16 +110,16 @@ const About = () => {
                   <div className="w-full flex-shrink-0 text-center">
                     <h2 className="text-2xl font-bold bg-gradient-to-br from-white to-blue-400 text-transparent bg-clip-text">Design</h2>
                       <div className='m-5 grid grid-cols-2 md:grid-cols-3 justify-items-center gap-4'>
-                        <div className="bg-purple-900 w-[7rem] h-12 border rounded-2xl border-gray-500 flex items-center justify-center">
+                        <div className="bg-purple-900 w-[6rem] h-12 border rounded-2xl border-gray-500 flex items-center justify-center">
                             <h3 className="text-white text-base">Photoshop</h3>
                         </div>
-                        <div className="bg-purple-900 w-[7rem] h-12 border rounded-2xl border-gray-500 flex items-center justify-center">
+                        <div className="bg-purple-900 w-[6rem] h-12 border rounded-2xl border-gray-500 flex items-center justify-center">
                             <h3 className="text-white text-base">Illustrator</h3>
                         </div>
-                        <div className="bg-purple-900 w-[7rem] h-12 border rounded-2xl border-gray-500 flex items-center justify-center">
+                        <div className="bg-purple-900 w-[6rem] h-12 border rounded-2xl border-gray-500 flex items-center justify-center">
                             <h3 className="text-white text-base">Figma</h3>
                         </div>
-                        <div className="bg-purple-900 w-[7rem] h-12 border rounded-2xl border-gray-500 flex items-center justify-center">
+                        <div className="bg-purple-900 w-[6rem] h-12 border rounded-2xl border-gray-500 flex items-center justify-center">
                             <h3 className="text-white text-base">Canva</h3>
                         </div>
                       </div>
@@ -128,16 +128,16 @@ const About = () => {
                   <div className="w-full flex-shrink-0 text-center">
                     <h2 className="text-2xl font-bold bg-gradient-to-br from-white to-blue-400 text-transparent bg-clip-text">Tools & Platforms</h2>
                       <div className='m-5 grid grid-cols-2 md:grid-cols-3 justify-items-center gap-4'>
-                        <div className="bg-purple-900 w-[7rem] h-12 border rounded-2xl border-gray-500 flex items-center justify-center">
+                        <div className="bg-purple-900 w-[6rem] h-12 border rounded-2xl border-gray-500 flex items-center justify-center">
                             <h3 className="text-white text-base">VS Code</h3>
                         </div>
-                        <div className="bg-purple-900 w-[7rem] h-12 border rounded-2xl border-gray-500 flex items-center justify-center">
+                        <div className="bg-purple-900 w-[6rem] h-12 border rounded-2xl border-gray-500 flex items-center justify-center">
                             <h3 className="text-white text-base">Postman</h3>
                         </div>
-                        <div className="bg-purple-900 w-[7rem] h-12 border rounded-2xl border-gray-500 flex items-center justify-center">
+                        <div className="bg-purple-900 w-[6rem] h-12 border rounded-2xl border-gray-500 flex items-center justify-center">
                             <h3 className="text-white text-base">Git</h3>
                         </div>
-                        <div className="bg-purple-900 w-[7rem] h-12 border rounded-2xl border-gray-500 flex items-center justify-center">
+                        <div className="bg-purple-900 w-[6rem] h-12 border rounded-2xl border-gray-500 flex items-center justify-center">
                             <h3 className="text-white text-base">Github</h3>
                         </div>
                       </div>
@@ -163,7 +163,7 @@ const About = () => {
 
             {/* Content */}
             <div className="relative z-10">
-              <h2 className="text-3xl font-bold text-left mt-60 ml-5">I believe in listening
+              <h2 className="text-3xl font-bold text-left mt-60 ml-0 md:ml-5">I believe in listening
               <br /> first, then creating  <br />  with purpose</h2>
             </div>
           </div>
@@ -187,7 +187,7 @@ const About = () => {
 
             {/* Content */}
             <div className="relative z-10">
-              <h2 className="text-3xl font-bold text-left mt-60 ml-5">Always exploring <br /> new challenges  <br />  and creative roles</h2>
+              <h2 className="text-3xl font-bold text-left mt-60 ml-0 md:ml-5">Always exploring <br /> new challenges  <br />  and creative roles</h2>
             </div>
           </div>
 
