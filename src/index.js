@@ -12,7 +12,9 @@ ReactGA.initialize('G-00WQNW168X'); // Replace with your GA4 Measurement ID
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   //<React.StrictMode>
-    <App />
+  <BrowserRouter>
+  <App />
+</BrowserRouter>
   //</React.StrictMode>
 );
 
