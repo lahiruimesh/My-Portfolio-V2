@@ -1,8 +1,4 @@
 import './App.css';
-import { useEffect } from 'react'; // ✅ You forgot to import this!
-import { useLocation } from 'react-router-dom';
-import ReactGA from 'react-ga4';
-
 import Navbar from './Components/Navbar';
 import Hero from './Components/Hero';
 import About from './Components/About';
@@ -15,17 +11,7 @@ import Chatbot from './Components/Chatbot';
 import Education from './Components/Education';
 import GalaxyBackground from "./Components/GalaxyBackground";
 
-function usePageTracking() {
-  const location = useLocation();
-
-  useEffect(() => {
-    ReactGA.send({ hitType: 'pageview', page: location.pathname });
-  }, [location]);
-}
-
 function App() {
-  usePageTracking();
-
   return (
     <div>
       <Navbar />
@@ -37,7 +23,7 @@ function App() {
       <Projects />
       <Education />
       <BeyondWorks />
-      <Contact />
+    <Contact /> 
       <Footer />
     </div>
   );
