@@ -11,9 +11,9 @@ ReactGA.initialize('G-XXXXXXXXXX'); // Replace with your GA4 Measurement ID
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  //<React.StrictMode>
     <App />
-  </React.StrictMode>
+  //</React.StrictMode>
 );
 
 // Optional: Track performance metrics with Google Analytics
