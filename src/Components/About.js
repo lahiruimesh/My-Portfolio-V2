@@ -265,7 +265,7 @@ const About = () => {
                 <span className="font-semibold">Duration:</span> 2023 – Present
               </p>
               <p className="text-purple-200 text-sm md:text-base mb-1">
-                <span className="font-semibold">Current Year:</span> 2nd Year Undergraduate
+                <span className="font-semibold">Current Year:</span> 3rd Year Undergraduate
               </p>
               <p className="text-purple-200 text-sm md:text-base mb-1">
                 <span className="font-semibold">Focus Areas:</span> Full-Stack Development, UI/UX Design, Software Engineering

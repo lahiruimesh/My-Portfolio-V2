@@ -80,6 +80,7 @@ const Skills = () => {
           <motion.div
             key={card.id}
             initial={{ opacity: 0, y: 50 }}
+            whileHover={{ scale: 1.05 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0.3 + index * 0.2, duration: 0.6 }}
             className="flex flex-col justify-between p-4 border border-purple-400/70 rounded-lg bg-gray-900 w-80 shadow-lg hover:shadow-xl hover:shadow-purple-500/20 transition-all duration-300 transform hover:-translate-y-1 hover:scale-105"

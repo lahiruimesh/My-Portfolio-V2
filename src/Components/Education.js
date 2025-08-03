@@ -95,6 +95,7 @@ const Education = () => {
               <motion.div
                 key={edu.id}
                 initial={{ opacity: 0, y: 50 }}
+                whileHover={{ scale: 1.02 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.5 }}
                 transition={{ duration: 0.6, delay: index * 0.2 }}

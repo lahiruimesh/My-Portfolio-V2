@@ -50,10 +50,11 @@ const Projects = () => {
           <motion.div
             key={card.id}
             variants={cardVariants}
+            whileHover={{ scale: 1.05 }}
             initial="hidden"
             animate={isInView ? "visible" : "hidden"}
             transition={{ duration: 0.6, delay: index * 0.3 }}
-            className="flex flex-col justify-between p-2 shadow-lg rounded-lg bg-gray-900 w-80 transition-all duration-300 hover:scale-105 hover:shadow-blue-500/30"
+            className="flex flex-col justify-between p-2 shadow-lg rounded-lg bg-gray-900 w-80 transition-all duration-300 hover:shadow-blue-500/30"
           >
             <img
               src={card.image}
