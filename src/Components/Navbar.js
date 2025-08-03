@@ -60,7 +60,7 @@ const Navbar = () => {
       } `}
     >
       <div className="max-w-6xl mx-auto flex justify-between items-center">
-        <h1 className="text-2xl font-bold">My Portfolio</h1>
+        <h1 className="text-2xl font-bold"><span className='text-purple-600 text-2xl font-bold'>L</span>ahiru <span className='text-purple-600 text-2xl font-bold'>I</span>mesh</h1>
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex gap-8">
