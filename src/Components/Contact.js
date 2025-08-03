@@ -1,10 +1,17 @@
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 
 export const ContactUs = () => {
   const form = useRef();
   const [feedback, setFeedback] = useState('');
+
+  // Intersection Observer setup
+  const { ref: sectionRef, inView } = useInView({
+    triggerOnce: true, // Animate only once
+    threshold: 0.2,     // 20% in view triggers animation
+  });
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -20,7 +27,6 @@ export const ContactUs = () => {
         () => {
           console.log('SUCCESS!');
           setFeedback('Message sent successfully!');
-          // Reset the form after successful submission
           form.current.reset();
         },
         (error) => {
@@ -33,21 +39,18 @@ export const ContactUs = () => {
   return (
     <motion.section
       id="contact"
-      className="p-8 bg-gradient-to-r from-purple-900 via-black to-black min-h-screen"
-      style={{
-        backgroundImage: 'linear-gradient(to bottom right, #000015,rgb(12, 1, 20),rgb(25, 5, 41),rgb(8, 2, 12))',
-        backgroundColor: '#000015' // fallback color
-      }}
+      ref={sectionRef}
+      className="p-8 min-h-screen"
       initial={{ opacity: 0, y: 50 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1 }}
+      animate={inView ? { opacity: 1, y: 0 } : {}}
+      transition={{ duration: 0.8, ease: 'easeOut' }}
     >
       <h2 className="text-3xl font-bold text-white text-center">Contact Me</h2>
       <div className="max-w-2xl mx-auto m-12">
         <form 
           ref={form} 
           onSubmit={sendEmail} 
-          className="max-w-lg mx-auto mt-6 bg-white bg-opacity-10 p-8 rounded-1g shadow-5g rounded-xl border border-gray-600"
+          className="max-w-lg mx-auto mt-6 bg-white bg-opacity-10 p-8 rounded-xl shadow-lg border border-gray-600"
         >
           <input 
             type="text" 
@@ -76,7 +79,6 @@ export const ContactUs = () => {
             Send
           </button>
         </form>
-        {/* Display feedback message */}
         {feedback && (
           <p 
             className="mt-4 text-center font-medium"

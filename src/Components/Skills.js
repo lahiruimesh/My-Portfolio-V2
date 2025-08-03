@@ -1,4 +1,7 @@
 import React from 'react';
+import { useInView } from 'react-intersection-observer';
+import { motion } from 'framer-motion';
+
 import i1 from '../Assets/Skills/i1.png';
 import i2 from '../Assets/Skills/i2.png';
 import i3 from '../Assets/Skills/i3.png';
@@ -50,42 +53,52 @@ const skillCards = [
 ];
 
 const Skills = () => {
+  const { ref, inView } = useInView({ triggerOnce: true });
+
   return (
-    <section
-      id="skills"
-      className="p-8 bg-black text-white min-h-screen"
-      style={{
-        backgroundImage: 'linear-gradient(to top left, rgb(13, 0, 22), rgb(24, 1, 39), rgb(15, 2, 27), rgb(35, 0, 59))',
-        backgroundColor: '#000015'
-      }}
-    >
-      <h2 className="text-3xl font-bold text-center">Skills</h2>
-      <p className="text-center mt-4">A showcase of my technical skills and tools I’ve worked with across various projects.</p>
+    <section id="skills" ref={ref} className="p-8 text-white min-h-screen">
+      <motion.h2
+        initial={{ opacity: 0, y: 50 }}
+        animate={inView ? { opacity: 1, y: 0 } : {}}
+        transition={{ duration: 0.6 }}
+        className="text-3xl font-bold text-center"
+      >
+        Skills
+      </motion.h2>
+
+      <motion.p
+        initial={{ opacity: 0 }}
+        animate={inView ? { opacity: 1 } : {}}
+        transition={{ delay: 0.3, duration: 0.6 }}
+        className="text-center mt-4"
+      >
+        A showcase of my technical skills and tools I’ve worked with across various projects.
+      </motion.p>
 
       <div className="m-20 grid grid-cols-1 md:grid-cols-3 justify-items-center gap-6">
-        {skillCards.map((card) => (
-          <div
+        {skillCards.map((card, index) => (
+          <motion.div
             key={card.id}
+            initial={{ opacity: 0, y: 50 }}
+            animate={inView ? { opacity: 1, y: 0 } : {}}
+            transition={{ delay: 0.3 + index * 0.2, duration: 0.6 }}
             className="flex flex-col justify-between p-4 border border-purple-400/70 rounded-lg bg-gray-900 w-80 shadow-lg hover:shadow-xl hover:shadow-purple-500/20 transition-all duration-300 transform hover:-translate-y-1 hover:scale-105"
           >
-
             <h3 className="text-xl font-bold text-[#C0C0C0] text-center opacity-80 hover:opacity-100 transition-opacity mb-6 duration-300">
               {card.title}
             </h3>
 
-
-            {/* Technology images */}
             <div className="flex flex-wrap gap-3 justify-center mb-5">
-            {card.image.map((imgSrc, index) => (
+              {card.image.map((imgSrc, index) => (
                 <img
-                key={index}
-                src={imgSrc}
-                alt={`tech-${index}`}
-                className="h-10 w-10 object-contain hover:scale-110 transition-transform"
+                  key={index}
+                  src={imgSrc}
+                  alt={`tech-${index}`}
+                  className="h-10 w-10 object-contain hover:scale-110 transition-transform"
                 />
-            ))}
+              ))}
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </section>

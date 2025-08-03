@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+/* In App.css */
+.parallax-gradient-bg {
+  background-image: linear-gradient(to bottom right, rgb(40, 2, 66), rgb(24, 1, 39), rgb(24, 5, 41), rgb(9, 1, 14));
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

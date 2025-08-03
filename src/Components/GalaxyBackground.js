@@ -25,7 +25,7 @@ const GalaxyBackground = () => {
     // Create stars
     const starGeometry = new THREE.BufferGeometry();
     const starMaterial = new THREE.PointsMaterial({
-      size: 0.045,
+      size: 0.02,
       transparent: true,
       opacity: 0.8,
     });
@@ -45,8 +45,8 @@ const GalaxyBackground = () => {
     // Animation loop
     const animate = () => {
       requestAnimationFrame(animate);
-      stars.rotation.y += 0.0006;
-      stars.rotation.x += 0.0006;
+      stars.rotation.y += 0.001;
+      stars.rotation.x += 0.001;
       renderer.render(scene, camera);
     };
     animate();
@@ -69,8 +69,8 @@ const GalaxyBackground = () => {
     };
   }, []);
   
-
-  return <div ref={mountRef} className="absolute top-0 left-0 w-full h-full z-0" style={{ backgroundColor: '#000015' }}/>;
+    
+  return <div ref={mountRef} className="absolute top-0 left-0 w-full z-0"/>;
 };
 
 export default GalaxyBackground;

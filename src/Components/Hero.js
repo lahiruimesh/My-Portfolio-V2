@@ -56,6 +56,8 @@ export default Hero;
 import React from "react";
 import GalaxyBackground from "./GalaxyBackground";
 import CV from '../Assets/CV.pdf';
+import { TypeAnimation } from 'react-type-animation';
+import { Typewriter } from 'react-simple-typewriter';
 import { FaLinkedin, FaFacebook, FaBehance, FaGithub } from "react-icons/fa";
 
 const socialLinks = [
@@ -72,8 +74,6 @@ const Hero = () => {
       id="hero"
       className="h-screen flex items-center justify-center text-white relative overflow-hidden px-4"
     >
-      <GalaxyBackground />
-
       {/* Social Icons */}
       {/* Sidebar Icons for Desktop (hidden on mobile) */}
 <div className="hidden sm:flex absolute left-10 top-1/2 transform -translate-y-1/2 flex-col space-y-6 z-10">
@@ -97,17 +97,34 @@ const Hero = () => {
 
       {/* Main Content */}
       <div className="text-center relative z-10 max-w-4xl">
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight">
-          Hi, I'm{" "}
-          <span className="bg-gradient-to-br from-purple-600 to-blue-600 text-transparent bg-clip-text">
-            Lahiru Imesh
-          </span>
-        </h1>
+      <h1 className="text-5xl sm:text-4xl md:text-6xl lg:text-7xl font-bold leading-tight flex flex-col sm:flex-row sm:flex-wrap items-center sm:gap-2">
+  <span>Hi, I'm</span>
+  <span className="ml-3 bg-gradient-to-br from-purple-600 to-blue-600 text-transparent bg-clip-text">
+    <TypeAnimation
+      sequence={[
+        'Lahiru Imesh',
+        2000,
+        '',
+        'Web Developer',
+        2000,
+        'UI/UX Designer',
+        2000,
+        'Lahiru Imesh',
+        2000,
+      ]}
+      speed={200}
+      repeat={Infinity}
+      cursor={true} // this adds the blinking |
+    />
+  </span>
+</h1>
 
-        <p className="text-base md:text-xl mt-6 text-purple-200">
+
+
+        <h2 className="text-base md:text-2xl mt-6 text-purple-200">
           I am an undergraduate at the University of Moratuwa, focused on <br className="hidden sm:inline" />
           developing my skills in IT and software development.
-        </p>
+        </h2>
 
         {/* Buttons */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-10">

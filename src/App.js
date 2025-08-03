@@ -13,20 +13,28 @@ import GalaxyBackground from "./Components/GalaxyBackground";
 
 function App() {
   return (
-    <div>
+    <div className='relative'>
       <Navbar />
+      <div className="parallax-gradient-bg scroll-smooth">
       <GalaxyBackground />
       <Chatbot />
       <Hero />
-      <About />
-      <Skills />
-      <Projects />
-      <Education />
-      <BeyondWorks />
-    <Contact /> 
+        <About />
+        <Skills />
+        <Projects />
+        <Education />
+        <BeyondWorks />
+        <Contact /> 
+      </div>
       <Footer />
     </div>
   );
 }
 
 export default App;
+
+
+/*style={{
+        backgroundImage:  "linear-gradient(to bottom right,rgb(13, 0, 22),rgb(24, 1, 39),rgb(15, 2, 27),rgb(35, 0, 59))",
+        backgroundColor: '#000015' // fallback color
+      }} */
